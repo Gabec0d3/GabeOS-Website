@@ -1,0 +1,731 @@
+/*Seletor fonte*/
+@font-face {
+   font-family: "windows";
+   src: url('/_fonte/Windows\ Regular.ttf');
+}
+
+/*Seletor Universal*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+/*Corpo da página*/
+body {
+    display: flex;
+    overflow: hidden;
+    
+}
+
+/*Main*/
+#principal {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/*Imagem Windows 95*/
+.imagem-fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1.1);
+}
+
+/*Bloco Div Icons*/
+.bloco {
+    position: relative;
+    margin-left: 5px;
+}
+
+/*Icons*/
+.icons {
+    display: flex;
+    margin: 80px 0px 0px 55px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/*Letra dos Icons*/
+.letras {
+    display: flex;
+    margin: 10px 0px 0px 50px;
+    font-size: 22px;
+    font-family: 'windows';
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+/*Letra do icon about me*/
+.letras-2 {
+    font-family: 'windows';
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: 10px 0px 0px 40px;
+    font-size: 22px;
+}
+
+/*DIV abou me*/
+#minhaDiv {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 650px;
+    height: 600px;
+    margin-left: 500px;
+    margin-top: -200px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+/*Cabeçalho dentro da div*/
+.cabecalho {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(126, 129, 136);
+    box-shadow: inset 1px 1px 10px rgba(255, 255, 255, 0.3);
+    filter: contrast(1);
+    display: flex;
+    align-items: center;
+}
+    
+/*Notepad*/
+.bloco-notas {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+}
+
+/*Div botões de fechar, minimizar e maximizar*/
+.botoes {
+    width: 90px;
+    margin-left: 530px;
+}
+
+/*botões de fechar, minimizar e maximizar*/
+.funcional {
+    background-color: rgb(126, 129, 136);
+    display: inline-block;
+    position: relative;
+    box-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
+}
+ 
+/* main inside da div*/
+.inside {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 96%;
+    box-shadow: inset 3px 3px 5px rgb(138, 138, 138);
+}
+
+/*Div da título e do texto*/
+.texto-inteiro {
+    display: flex;
+    margin-left: auto;
+    margin-top: 35px;
+}
+
+/*titulo do bloco de notas*/
+.titulo {
+    color: blueviolet;
+    font-family: 'windows';
+    font-size: 60px;
+    margin-left: 160px;
+    position: fixed;
+    text-shadow: 5px 5px 7px;
+}
+
+/*bio do bloco de notas*/
+.about-me {
+    font-family: 'windows';
+    font-size: 28px;
+    margin-top: 100px;
+    margin-left: 5px;
+}
+
+/*Logo github gif*/
+.logo-github {
+    position: absolute;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin-top: 400px;
+    margin-left: -380px;
+}
+
+/*Div das Skills*/
+#minhaDiv2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 650px;
+    height: 600px;
+    margin-left: 1100px;
+    margin-top: -350px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+/*cabeçalho do skills*/
+.cabecalho-2 {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(126, 129, 136);
+    box-shadow: inset 1px 1px 10px rgba(255, 255, 255, 0.3);
+    filter: contrast(1);
+    display: flex;
+    align-items: center;
+}
+
+/*bloco de notas do skills*/
+.bloco-notas-2 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+}
+
+/*botões do skills*/
+.botoes-2 {
+    width: 90px;
+    margin-left: 558px;
+}
+
+/*main inside da div*/
+.inside-2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 96%;
+    box-shadow: inset 3px 3px 5px rgb(138, 138, 138);
+}
+
+/*logos*/
+.logos-1 {
+    margin-left: 5px;
+    margin-right: 95px;
+    margin-top: 18px;
+    display:flex;
+    width: auto;
+    height: 180px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logos-1:hover {
+    transform: rotate(20deg);
+}
+
+.logos-2 { 
+    margin-left: -15px;
+    margin-right: 15px;
+    margin-top: 18px;
+    display:flex;
+    width: auto;
+    height: 180px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logos-2:hover {
+    transform: rotate(20deg);
+}
+
+.logos-3 {
+    margin-left: -10px;
+    margin-top: 18px;
+    width: auto;
+    height: 180px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logos-3:hover {
+    transform: rotate(20deg);
+}
+
+.logos-4 {
+    margin-left: -560px;
+    margin-top: 300px;
+    display:flex;
+    width: auto;
+    height: 180px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logos-4:hover {
+    transform: rotate(20deg);
+}
+
+.logos-5 {
+    margin-left: 90px;
+    margin-top: 300px;
+    display:flex;
+    width: auto;
+    height: 180px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logos-5:hover {
+    transform: rotate(20deg);
+}
+
+
+/*Div Projects*/
+#minhaDiv3 {
+    display: none;
+    background-color: white;
+    width: 1910px;
+    height: 900px;
+    margin-top: -710px;
+    position: absolute;
+    box-shadow: 1px 2px 1px 2px black;
+}
+
+/*cabeçalho do projects*/
+.cabecalho-3 {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(126, 129, 136);
+    box-shadow: inset 1px 1px 10px rgba(255, 255, 255, 0.3);
+    filter: contrast(1);
+    display: flex;
+    align-items: center;
+}
+
+/*bloco de notas do projects*/
+.bloco-notas-3 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+}
+
+/*botões do projects*/
+.botoes-3 {
+    width: 90px;
+    margin-left: 1790px;
+}
+
+/*main do projects*/
+.inside-3 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 97.2%;
+    box-shadow: inset 3px 3px 5px rgb(138, 138, 138);
+}
+
+/*título do projects*/
+.titulo-2 {
+    color: blueviolet;
+    font-family: 'windows';
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 750px;
+    position: fixed;
+    text-shadow: 5px 5px 7px;
+ }
+
+ /*conteúdo que vai dentro do projects*/
+.project-content {
+    width: 600px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 10px;
+    border: solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 2px;
+}
+
+
+/*botão deploy*/
+.deploy {
+    font-size: 30px;
+    font-family: 'windows';
+    height: 50px;
+    box-shadow: 3px 2px;
+    background-color: grey;
+    margin-top: 470px;
+    margin-left: -470px ;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.deploy:hover {
+    background-color: blueviolet;
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+/*botão code*/
+.deploy-2 {
+    font-size: 30px;
+    font-family: 'windows';
+    height: 50px;
+    box-shadow: 3px 2px;
+    background-color: grey;
+    margin-top: 470px;
+    margin-left: -200px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.deploy-2:hover {
+    background-color: blueviolet;
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+
+/*Letra do icon skills*/
+.letras-3 {
+    font-family: 'windows';
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: 10px 0px 0px 65px;
+    font-size: 22px;
+}
+
+/*Barra Windows*/
+.rodape {
+    margin-left: 0;
+    margin-top: 936px;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(126, 129, 136);
+    box-shadow: inset 1px 1px 10px rgba(255, 255, 255, 0.3);
+    filter: contrast(1);
+}
+
+/*Botão Start*/
+.inicio {
+    box-shadow: 2px 1px 0 rgba(0, 0, 0, 0.9);
+    border-radius: 1px 1px;
+    width: 90px;
+    background-color: rgb(126, 129, 136);
+    cursor: pointer;
+    position: relative;
+}
+
+/*Letra Start*/ 
+.letra-inicio {
+    font-family: 'windows';
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+/*Relógio*/
+.digital-clock {
+    font-family: 'windows';
+    font-size: 18px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 1700px;
+    background: rgb(117, 119, 122);
+    box-shadow: inset 3px 1px 2px 0px rgb(95, 93, 93);
+    width: 80px;
+    display: inline-block;
+}
+
+
+#minhaDiv4 {
+    display: none;
+    background-color: rgb(117, 119, 122);
+    width: 300px;
+    height: 500px;
+    left: 0;
+    top: 431px;
+    position: absolute;
+    box-shadow: 2px 2px 1px 2px black;
+    
+    
+}
+
+/*Main div menu*/
+.inside-4 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-menu {
+    width: 100%;
+    display: flex;
+}
+
+
+/*BOTÕES DA DIV START DE 0 A 8 */
+.bot {
+    width: 100%;
+    height: 60px;
+    margin-top: 440px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+}
+
+
+.bot:hover {
+    background-color: rgb(185, 0, 0);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+.icon-comp {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.func {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 110px;
+}
+
+
+.bot-2 {
+    width: 100%;
+    height: 60px;
+    margin-top: 379px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+}
+
+
+.bot-2:hover {
+    background-color: rgb(179, 0, 185);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+
+
+.icon-music {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.func-2 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 110px;
+    position: absolute;
+}
+
+
+
+.bot-3 {
+    width: 100%;
+    height: 60px;
+    margin-top: 318px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+    
+}
+
+
+.bot-3:hover {
+    background-color: rgb(0, 59, 185);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+
+.icon-link {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 53px;
+    position: absolute;
+    
+}
+
+.func-3 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 112px;
+    color: black;
+    
+}
+
+
+.bot-4 {
+    width: 100%;
+    height: 60px;
+    margin-top: 257px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+}
+
+
+.bot-4:hover {
+    background-color: rgb(37, 185, 0);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+
+.icon-folder {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 53px;
+    position: absolute;
+}
+
+.func-4 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 112px;
+}
+
+
+.bot-5 {
+    width: 100%;
+    height: 60px;
+    margin-top: 196px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+}
+
+
+.bot-5:hover {
+    background-color: rgb(229, 245, 6);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+
+.icon-calendar {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 53px;
+    position: absolute;
+}
+
+.func-5 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 112px;
+}
+
+
+.bot-6 {
+    width: 100%;
+    height: 60px;
+    margin-top: 135px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+}
+
+
+.bot-6:hover {
+    background-color: rgb(255, 102, 0);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+
+.icon-phone {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 53px;
+    position: absolute;
+}
+
+.func-6 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 112px;
+}
+
+
+.bot-7 {
+    width: 100%;
+    height: 60px;
+    margin-top: 74px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+}
+
+
+.bot-7:hover {
+    background-color: rgb(0, 217, 255);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+}
+
+
+.icon-calc {
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 53px;
+    position: absolute;
+}
+
+.func-7 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 112px;
+}
+
+
+.bot-8 {
+    width: 100%;
+    height: 73px;
+    margin-top: 0px;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: solid 1px black;
+    
+}
+
+
+.bot-8:hover {
+    background-color: rgb(255, 0, 255);
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.9);
+    ;
+}
+
+.func-8 {
+    font-family: 'windows';
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 70px;
+    text-shadow: 5px 5px 8px orangered;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.func-8:hover {
+    transform:translate(50px);
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon/android-chrome-512x512.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+    <title>Gabe OS</title>
+</head>
+<body>
+    <main id="principal">
+
+        
+
+         <!--RESUME-->
+        <img class="imagem-fundo" src="imagens/2.jpg" alt="papel de parede">
+        
+
+           <div class="bloco">
+             <a href="arquivo/curriculofront.pdf" target="_blank"><img class="icons" src="icons/notepad.png" alt="currículo"><h1 class="letras">Resume</h1></a>
+
+             <!--ABOUT ME-->
+          <img class="icons" src="icons/text_file.png" alt="Sobre mim" onclick="mostrarOcultarDiv('minhaDiv')"><h1 class="letras-2">About me :]</h1>
+            <div id="minhaDiv" class="hidden">
+              <header class="cabecalho">
+                <h1 class="bloco-notas">Notepad</h1>
+                  <div class="botoes">
+                     <button class="funcional">_</button>
+                     <button class="funcional">□</button>
+                     <button class="funcional" onclick="fecharDiv('minhaDiv')">X</button>
+                  </div>
+              </header>
+            <main class="inside">
+                  <div class="texto-inteiro"> 
+                    <h1 class="titulo">ABOUT ME :]</h1>
+                    <p class="about-me">E aí, mundo! Eu sou Gabriel, o arquiteto de pixels e amante do código por trás dessa interface incrível. 
+                    Como um Dev Front-end Junior, minha missão é transformar linhas de código em experiências visuais que fazem os olhos brilharem.
+                    <br>Não sou apenas um dom das linhas de código; também sou um amante da estética. 
+                    Adoro misturar cores e layouts para criar algo que seja tanto bonito quanto funcional.</p>
+                    <a href="https://github.com/Gabec0d3" target="_blank"><img class="logo-github" src="icons/GitHub-logo.gif" alt="logo github"></a>
+                  </div>
+            </main>
+            </div>
+
+             <!--SKILLS-->
+           <img class="icons" src="icons/minecraft.png" alt="Habilidades" onclick="mostrarOcultarDiv('minhaDiv2')"><h1 class="letras-3">Skills</h1>
+             <div id="minhaDiv2" class="hidden">
+               <header class="cabecalho">
+                 <h1 class="bloco-notas-2">Skills</h1>
+                  <div class="botoes-2">
+                    <button class="funcional">_</button>
+                    <button class="funcional">□</button>
+                    <button class="funcional" onclick="fecharDiv('minhaDiv2')">X</button>
+                  </div>
+                </header>
+            <main class="inside-2">
+                <img class="logos-1" src="imagens/h.png" alt="logo html5">
+                <img class="logos-2" src="imagens/c.png" alt="logo css3">
+                <img class="logos-3" src="imagens/j.png" alt="logo javascript">
+                <img class="logos-4" src="imagens/f.png" alt="logo figma">
+                <img class="logos-5" src="imagens/g.png" alt="logo git">
+            </main>
+            </div>
+
+          <!--PROJECTS-->
+          <img class="icons" src="icons/world.png" alt="Projetos" onclick="mostrarOcultarDiv('minhaDiv3')"><h1 class="letras">Projects</h1>
+             <div id="minhaDiv3" class="hidden">
+               <header class="cabecalho-3">
+                 <h1 class="bloco-notas-3">Projects</h1>
+                   <div class="botoes-3">
+                     <button class="funcional">_</button>
+                     <button class="funcional">□</button>
+                     <button class="funcional" onclick="fecharDiv('minhaDiv3')">X</button>
+                   </div>
+               </header>
+             <main class="inside-3">
+                 <h1 class="titulo-2"> MY PROJECTS</h1>
+                 <!--CONTEÚDO DE DENTRO DO PROJECTS-->
+                 <img class="project-content" src="imagens/poke.png" alt="poke">
+                 <a href="https://gabec0d3.github.io/Poke-website/" target="_blank"><button class="deploy">Deploy</button></a>
+                 <a href="https://github.com/Gabec0d3/Poke-website" target="_blank"><button class="deploy-2">Code</button></a>
+             </main>
+             </div>
+          </div>
+            
+           <!--RODAPÉ-->
+           <div id="minhaDiv4" class="hidden">
+             <main class="inside-4">
+                <div class="icon-menu">
+
+                 <div class="bot" onclick="exibirMensagemdesligar()">  
+                   <img class="icon-comp" src="icons/this_computer.png" alt="computador"><h2 class="func">SHUTDOWN</h2>
+                   
+                 </div>
+
+                 <div class="bot-2" onclick="playandPause()" onclick="mostrarOcultarDiv('logo-nyan')">
+                    <img class="icon-music" src="icons/music.png" alt="música"><h2 class="func-2">MUSIC</h2>
+                    <audio id="minhaMusicadois" src="som/macintosh.mp3"></audio>
+                    
+                 </div>
+                 
+                 <div class="bot-3">
+                    <a href="https://www.linkedin.com/in/gabeolivera/" target="_blank">
+                    <img class="icon-link" src="icons/mail.png" alt="linkedin"><h2 class="func-3">LinkedIn</h2>
+                    </a>
+                 </div>
+
+                 <div class="bot-4" onclick="exibirMensagempasta()">
+                    <img  class="icon-folder" src="icons/folder_closed.png" alt="pasta"><h2 class="func-4">FOLDER</h2>
+                 </div>
+                
+                 <div class="bot-5">
+                    <img class="icon-calendar" src="icons/calendar.png" alt="calendário"><h2 class="func-5">CALENDAR</h2>
+                 </div>
+                  
+                 
+                <div class="bot-6" onclick="playPause()">
+                    <img class="icon-phone" src="icons/phone.png" alt="telefone"><h2 class="func-6">TELEPHONE</h2>
+                    <audio id="minhaMusica" src="som/old_telephone.mp3"></audio>
+                </div>
+                
+
+                    <div class="bot-7" onclick="exibirMensagem()">
+                    <img class="icon-calc" src="icons/calculator.png" alt="calculadora"><h2 class="func-7">CALCULATOR</h2>
+                    </div>
+                    
+                 
+
+                <div class="bot-8">
+                    <h2 class="func-8">CREATED BY GABE</h2>
+                </div>
+
+               </div>
+             </main>
+           </div>
+
+
+               <div class="rodape">
+                 <button class="inicio" onclick="mostrarOcultarDiv('minhaDiv4')"><h1 class="letra-inicio">Start</h1></button>
+                   <div id="clock" class="digital-clock"></div>
+               </div>
+     </main>
+
+
+
+<!--Parte do som Javascript-->
+     <script>
+      var minhaMusica = document.getElementById("minhaMusica");
+  
+      function playPause() {
+          if (minhaMusica.paused) {
+              minhaMusica.play();
+          } else {
+              minhaMusica.pause();
+          }
+      }
+      
+  </script>
+  
+  <script>
+      var minhaMusicadois = document.getElementById("minhaMusicadois");
+  
+      function playandPause() {
+          if (minhaMusicadois.paused) {
+              minhaMusicadois.play();
+          } else {
+              minhaMusicadois.pause();
+          }
+      }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+<!--  _____            ____   ______   _____   ___   _____   ____
+ / ____|    /\    |  _ \ |  ____| / ____| / _ \ |  __ \ |___ \
+| |  __    /  \   | |_) || |__   | |     | | | || |  | |  __) |
+| | |_ |  / /\ \  |  _ < |  __|  | |     | | | || |  | | |__ <
+| |__| | / ____ \ | |_) || |____ | |____ | |_| || |__| | ___) |
+ \_____|/_/    \_\|____/ |______| \_____| \___/ |_____/ |____/
+D3s1ng + d3v by GabeC0d3-->
+</body>
+</html>
+
+
+
+
